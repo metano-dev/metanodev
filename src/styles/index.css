@@ -21,3 +21,6 @@
 body{
   background-color: rgb(231, 231, 231);
 }
+.darkmodeon{
+  background-color: gray !important;
+}
