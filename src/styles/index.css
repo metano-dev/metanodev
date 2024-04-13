@@ -14,7 +14,10 @@
   font-family: bebas;
   src: url("../../fonts/bebas.otf");
 }
+
 * {
   font-family: main3d;
+}
+body{
   background-color: rgb(231, 231, 231);
 }
