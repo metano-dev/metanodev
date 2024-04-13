@@ -1,12 +1,23 @@
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { DarkModeProvider } from "./context/DarkModeProvider";
+import MainLayout from "./layout/Layout";
+import Home from "./pages/Home";
+import Intro from "./pages/Intro";
 
 function App() {
-
   return (
-    <>
-      <p>M E T A N O</p>
-    </>
-  )
+    <BrowserRouter>
+      <DarkModeProvider>
+        <Routes>
+        <Route path="/" element={<MainLayout />}>
+              <Route index element={<Intro />} />
+              <Route path="Home" element={<Home />} />
+          </Route>
+        </Routes>
+      </DarkModeProvider>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
