@@ -8,7 +8,7 @@ export default function MainLayout() {
   return (
     <>
       <HeaderNav/>
-      <main className={darkMode ? `container mx-auto p-5 darkmodeon` : `container mx-auto p-5 darkmodeoff`} >
+      <main className={darkMode ? ` mx-auto p-5 h-screen darkmodeon flex flex-col justify-evenly` : ` mx-auto p-5 h-screen darkmodeoff flex flex-col justify-evenly`} >
       <Outlet />
       </main>
     </>

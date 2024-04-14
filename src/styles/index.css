@@ -17,10 +17,33 @@
 
 * {
   font-family: main3d;
+  padding: 0;
+  margin: 0;
 }
 body{
   background-color: rgb(231, 231, 231);
+  .header{
+    border-bottom: 3px dotted black;
+  }
+  .darkmodelogo{
+    width: 42px;
+    @media (min-width: 850px) {
+      width: 100px;
+    }
+  }
 }
+
 .darkmodeon{
   background-color: gray !important;
+  .header{
+    a{
+      color: white;
+    }
+  }
+  p{
+    color: white;
+  }
+  .mail:hover{
+    color: rgb(109, 5, 5);
+  }
 }
