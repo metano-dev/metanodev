@@ -1,6 +1,7 @@
+import { useContext } from "react";
 import { Outlet } from "react-router-dom";
 import HeaderNav from "../components/HeaderNav";
-import { useContext } from "react";
+import Footer from "../components/Footer";
 import DarkModeContext from "../context/DarkModeProvider";
 
 export default function MainLayout() {
@@ -11,6 +12,7 @@ export default function MainLayout() {
       <main className={darkMode ? ` mx-auto p-5 h-screen darkmodeon flex flex-col justify-evenly` : ` mx-auto p-5 h-screen darkmodeoff flex flex-col justify-evenly`} >
       <Outlet />
       </main>
+      <Footer/>
     </>
   );
 }
